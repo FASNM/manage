@@ -82,7 +82,7 @@ en:
     confirm: "Got it"
   main:
     start:
-      content: "WebDevPlus is a content editor for GitHub designed for managing websites."
+      content: "FASNM is a content editor for GitHub designed for managing websites."
       learn: "Learn more"
     repos:
       filter: "Filter Projects"
@@ -232,6 +232,3 @@ en:
       [GitHub](http://github.com). Use it to create, edit, and delete files,
       and save your changes directly to GitHub. Host your website on
       [GitHub Pages](http://pages.github.com) for free.
-
-      
-      
