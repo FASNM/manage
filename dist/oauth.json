@@ -1,0 +1,6 @@
+{
+  "api": "https://api.github.com",
+  "site": "https://github.com",
+  "clientId": "660e55c2f5103c141ae9",
+  "gatekeeperUrl": "https://gabonikeeper.herokuapp.com"
+}
