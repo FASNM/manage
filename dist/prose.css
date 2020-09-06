@@ -108,19 +108,18 @@ input {
 
 html, body {
   background: #fff;
-  color: hsl(0deg 0% 0%);
+  color: #288ffe;
   -webkit-font-smoothing: antialiased;
   }
 
 a {
-  color: #000000;
+  color: #3d494e;
   text-decoration: none;
   font-weight: 700;
   -webkit-transition: color 100ms linear;
   -moz-transition: color 100ms linear;
   -o-transition: color 100ms linear;
-  transition: color 100ms linear;
-  }
+  transition: color 100ms linear; }
 
 a.light {
   font-weight: normal; }
@@ -162,8 +161,9 @@ button:active,
   top: 1px; }
 
 .button:hover {
-  background: #3d494e;
-  color: #fff; }
+  background: #288ffe;
+  color: #fff;
+  }
 
 .button.delete {
   background-color: #db6f6f; }
@@ -219,7 +219,8 @@ p > a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  }
 
 h1 {
   font-size: 24px; }
@@ -251,8 +252,9 @@ h6 {
 .label,
 h1 small,
 h2 small {
-  font-size: 13px;
-  font-weight: 400; }
+  font-size: 25px;
+  font-weight: 400;
+  }
 
 h3 small {
   font-size: 14px;
@@ -296,7 +298,7 @@ input[type=text] {
 
 textarea,
 input[type=text] {
-  background-color: #f8f8f8;
+  background-color: #fff;
   vertical-align: middle;
   max-width: 100%;
   border: 1px solid #a8afb2;
@@ -307,8 +309,7 @@ input[type=text] {
   -webkit-transition: border linear 150ms;
   -moz-transition: border linear 150ms;
   -o-transition: border linear 150ms;
-  transition: border linear 150ms;
-  }
+  transition: border linear 150ms; }
 
 textarea#code {
   resize: none;
@@ -507,15 +508,14 @@ ins {
 
 /* Alterable filename input */
 .heading .headerinput {
-  background: rgba(181,209,255,0.34);
+  background: transparent;
   border: none;
   color: #434c50;
   margin: 0;
   font-size: 20px;
   line-height: 1.5em;
   font-weight: 700;
-  padding: 0;
-  }
+  padding: 0; }
 
 .heading .details {
   position: relative;
@@ -542,8 +542,7 @@ ins {
   background-color: #f8f8f8; }
 
 .inner {
-  padding: 28px;
-  }
+  padding: 15px; }
 
 .inner.deep {
   padding: 60px; }
@@ -558,18 +557,17 @@ ins {
 .sidebar {
   position: fixed;
   z-index: 1000;
-  top: 154px;
+  top: 0;
   right: -100%;
   width: 280px;
-  padding-right: 55px;
+  padding-right: 60px;
   height: 100%;
   overflow: auto;
   overflow-x: hidden;
   -webkit-transition: right 150ms ease-out;
   -moz-transition: right 150ms ease-out;
   -o-transition: right 150ms ease-out;
-  transition: right 150ms ease-out;
-  }
+  transition: right 150ms ease-out; }
 
 .sidebar.open {
   right: 0; }
@@ -585,7 +583,8 @@ ins {
   Global Styles
 ---------------------------------------------*/
 .application {
-  padding: 0 0 60px; }
+  padding: 8px 0 60px;
+  }
 
 .dropdown-menu.prose-menu {
   width: 120px;
@@ -649,20 +648,20 @@ ins {
 
 .sidebar {
   background: #fff;
-  border-left: 1px solid #288ffe;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1);
+  /* border-left: 1px solid #D4D7D9; */
+  /* -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1); */
   }
 
 #navigation {
   background: #fff;
   position: fixed;
   right: 0;
-  top: 83px;
+  top: 0;
   z-index: 5000;
-  width: 60px;
+  width: 62px;
   height: 100%;
-  border-left: 1px solid #fff;
+  /* border-left: 1px solid #fff; */
   }
 
 .open + #navigation {
@@ -714,8 +713,8 @@ ins {
   bottom: 0; }
 
 .nav li a {
-  background-color: hsl(0deg 3% 10%);
-  color: #f8f8f8;
+  background-color: hsl(60deg 100% 87%);
+  color: #a8afb2;
   display: block;
   width: 40px;
   height: 40px;
@@ -727,15 +726,14 @@ ins {
   }
 
 .nav li a:hover {
-  background-color: #288ffe;
-  }
+  background-color: #f0f0f0; }
 
 .nav li a:active {
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15); }
 
 .nav li a.active {
-  background-color: #288ffe;
+  background-color: hsl(211deg 99% 58%);
   color: #fff;
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
@@ -1056,26 +1054,28 @@ ins {
   animation-fill-mode: both; }
 
 .avatar {
-  background: #f8f8f8;
+  background: #288ffe;
   position: absolute;
   text-align: center;
   padding: 0;
-  z-index: 50;
-  width: 55px;
-  height: 50px; }
+  z-index: 24;
+  width: 47px;
+  height: 47px;
+  }
 
 .avatar img {
   background: #f8f8f8;
-  margin-top: 5px;
-  height: 40px;
-  width: 40px; }
+  margin-top: 7px;
+  height: 26px;
+  width: 27px;
+  }
 
 .avatar .ico,
 .avatar .icon {
-  background-color: #288ffe;
+  background-color: #ffffbd;
   line-height: 50px;
   display: block;
-  color: hsl(197deg 100% 100%);
+  color: #516066;
   }
 
 .avatar .icon {
@@ -1216,8 +1216,7 @@ ins {
 
 /* Top Branding/Navigation */
 .heading {
-  padding: 37px 0;
-  }
+  padding: 20px 0; }
 
 .details .user,
 .details .parent-trail,
@@ -1240,13 +1239,15 @@ ins {
 
 .breadcrumb {
   position: relative;
+  background-color: #fffe0040;
   z-index: 20;
-  padding: 0 15px;
-  height: 40px;
-  line-height: 40px;
+  padding: 1px 24px;
+  height: 45px;
+  line-height: 44px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  }
 
 .popup {
   background: #202020;
@@ -1311,10 +1312,11 @@ a:hover .popup {
 #start .splash {
   background: #fff;
   text-align: center;
-  margin: 45px auto;
-  width: 300px;
+  margin: 123px auto;
+  width: 226px;
   border: 1px solid #a8afb2;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0), 0 0 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0), 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
 .notification .error {
   font-size: 100%; }
@@ -1331,7 +1333,7 @@ a:hover .popup {
   height: auto; }
 
 .topbar {
-  margin: 5px 0 19px;
+  margin: 18px 0 3px;
   }
 
 .edit .topbar {
@@ -1369,11 +1371,12 @@ a:hover .popup {
 .content-search input {
   background: transparent;
   border: none;
-  padding: 8px 60px 8px 15px;
+  padding: -9px 60px 12px 15px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 21px;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  }
 
 .content-search .ico {
   position: absolute;
@@ -1685,7 +1688,8 @@ a:hover .popup {
   position: relative; }
 
 .listing li:first-child {
-  border-top: 1px solid #d4d7d9; }
+  /* border-top: 1px solid #d4d7d9; */
+  }
 
 .listing .listing-icon {
   position: absolute;
@@ -1695,11 +1699,12 @@ a:hover .popup {
 .sidebar .listing li a {
   display: block;
   padding: 5px 15px;
-  border-bottom: 1px solid #f0f0f0;
+  /* border-bottom: 1px solid #f0f0f0; */
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-weight: 400; }
+  font-weight: 400;
+  }
 
 .sidebar .listing li:first-child a {
   border-color: #f0f0f0; }
@@ -1716,11 +1721,11 @@ a:hover .popup {
 .content .listing .directory > a,
 .content .listing > li {
   display: block;
-  padding: 17px 35px;
-  border-bottom: 1px solid #f0f0f0;
-  height: 70px;
+  padding: 17px 18px;
+  border-bottom: 0px solid hsl(0deg 0% 100% / 0%);
+  height: 71px;
   height: auto !important;
-  min-height: 49px;
+  min-height: 68px;
   }
 
 .content .listing .directory {
@@ -2337,7 +2342,8 @@ a:hover .popup {
 
 .round {
   -webkit-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 22px;
+  }
 
 .arrow-top:after,
 .arrow-right:after,
@@ -3005,7 +3011,7 @@ span.CodeMirror-selectedtext {
   .dropdown-menu .dropdown a:hover {
     background: transparent; }
   .heading {
-    padding: 58px 2px;
+    padding: 12px 24px;
     }
   .content-search {
     margin: 8px 15px 15px; }
@@ -3013,7 +3019,7 @@ span.CodeMirror-selectedtext {
     width: 100%;
     margin: 0; }
   .limiter {
-    width: 69%;
+    width: 63%;
     margin: 0;
     }
   .fixed .containment {
@@ -3024,8 +3030,7 @@ span.CodeMirror-selectedtext {
     margin: 0;
     padding: 0; }
   .sidebar {
-    width: 30%;
-    }
+    width: 30%; }
   .meta .finish {
     -webkit-border-radius: 4px;
     border-radius: 4px; }
@@ -3096,8 +3101,7 @@ span.CodeMirror-selectedtext {
   .limiter,
   .open .limiter {
     width: 100%;
-    padding-right: 52px;
-    }
+    padding-right: 60px; }
   .fixed .containment,
   .open .fixed .containment {
     width: 100%; }
