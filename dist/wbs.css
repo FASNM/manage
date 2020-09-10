@@ -18,12 +18,13 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   border: 0;
-  font-size: 100%;
+  font-size: 99%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -108,8 +109,9 @@ input {
 
 html, body {
   background: #fff;
-  color: #516066;
-  -webkit-font-smoothing: antialiased; }
+  color: #288ffe;
+  -webkit-font-smoothing: antialiased;
+  }
 
 a {
   color: #3d494e;
@@ -139,7 +141,7 @@ button::-moz-focus-inner {
 
 button,
 .button {
-  background: #516066;
+  background: #288ffe;
   display: block;
   position: relative;
   padding: 10px 15px;
@@ -151,7 +153,8 @@ button,
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  }
 
 button:active,
 .button:active {
@@ -159,8 +162,9 @@ button:active,
   top: 1px; }
 
 .button:hover {
-  background: #3d494e;
-  color: #fff; }
+  background: #288ffe;
+  color: #fff;
+  }
 
 .button.delete {
   background-color: #db6f6f; }
@@ -182,7 +186,8 @@ button:active,
 
 .button.new,
 .button.good {
-  background-color: #90bb74; }
+  background-color: #288ffe;
+  }
 
 .button.new:hover,
 .button.good:hover {
@@ -215,7 +220,8 @@ p > a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  }
 
 h1 {
   font-size: 24px; }
@@ -247,8 +253,9 @@ h6 {
 .label,
 h1 small,
 h2 small {
-  font-size: 13px;
-  font-weight: 400; }
+  font-size: 25px;
+  font-weight: 400;
+  }
 
 h3 small {
   font-size: 14px;
@@ -577,7 +584,8 @@ ins {
   Global Styles
 ---------------------------------------------*/
 .application {
-  padding: 0 0 60px; }
+  padding: 8px 0 60px;
+  }
 
 .dropdown-menu.prose-menu {
   width: 120px;
@@ -641,9 +649,10 @@ ins {
 
 .sidebar {
   background: #fff;
-  border-left: 1px solid #D4D7D9;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1); }
+  /* border-left: 1px solid #D4D7D9; */
+  /* -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 1px 0 rgba(255, 255, 255, 0), -10px 0 10px -10px rgba(0, 0, 0, 0.1); */
+  }
 
 #navigation {
   background: #fff;
@@ -651,9 +660,10 @@ ins {
   right: 0;
   top: 0;
   z-index: 5000;
-  width: 60px;
+  width: 81px;
   height: 100%;
-  border-left: 1px solid #fff; }
+  /* border-left: 1px solid #fff; */
+  }
 
 .open + #navigation {
   border-color: #d4d7d9; }
@@ -704,7 +714,7 @@ ins {
   bottom: 0; }
 
 .nav li a {
-  background-color: #f8f8f8;
+  background-color: hsl(60deg 100% 87%);
   color: #a8afb2;
   display: block;
   width: 40px;
@@ -713,7 +723,8 @@ ins {
   text-align: center;
   margin: 10px;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  }
 
 .nav li a:hover {
   background-color: #f0f0f0; }
@@ -723,10 +734,11 @@ ins {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15); }
 
 .nav li a.active {
-  background-color: #526066;
+  background-color: hsl(211deg 99% 58%);
   color: #fff;
   -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15); }
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+  }
 
 .icon {
   background: transparent url("../img/sprite.png") no-repeat 0 0;
@@ -1043,26 +1055,29 @@ ins {
   animation-fill-mode: both; }
 
 .avatar {
-  background: #f8f8f8;
+  background: #288ffe;
   position: absolute;
   text-align: center;
   padding: 0;
-  z-index: 50;
-  width: 55px;
-  height: 50px; }
+  z-index: 24;
+  width: 47px;
+  height: 47px;
+  }
 
 .avatar img {
   background: #f8f8f8;
-  margin-top: 5px;
-  height: 40px;
-  width: 40px; }
+  margin-top: 7px;
+  height: 26px;
+  width: 27px;
+  }
 
 .avatar .ico,
 .avatar .icon {
-  background-color: #f8f8f8;
+  background-color: #ffffbd;
   line-height: 50px;
   display: block;
-  color: #516066; }
+  color: #516066;
+  }
 
 .avatar .icon {
   margin: 5px auto; }
@@ -1225,13 +1240,15 @@ ins {
 
 .breadcrumb {
   position: relative;
+  background-color: #fffe0040;
   z-index: 20;
-  padding: 0 15px;
-  height: 40px;
-  line-height: 40px;
+  padding: 1px 24px;
+  height: 45px;
+  line-height: 44px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  }
 
 .popup {
   background: #202020;
@@ -1296,10 +1313,11 @@ a:hover .popup {
 #start .splash {
   background: #fff;
   text-align: center;
-  margin: 45px auto;
-  width: 300px;
+  margin: 123px auto;
+  width: 226px;
   border: 1px solid #a8afb2;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0), 0 0 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0), 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
 .notification .error {
   font-size: 100%; }
@@ -1316,7 +1334,8 @@ a:hover .popup {
   height: auto; }
 
 .topbar {
-  margin: 8px 0 15px; }
+  margin: 18px 0 3px;
+  }
 
 .edit .topbar {
   margin: 0; }
@@ -1353,11 +1372,12 @@ a:hover .popup {
 .content-search input {
   background: transparent;
   border: none;
-  padding: 8px 60px 8px 15px;
+  padding: -9px 60px 12px 15px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 21px;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  }
 
 .content-search .ico {
   position: absolute;
@@ -1669,7 +1689,8 @@ a:hover .popup {
   position: relative; }
 
 .listing li:first-child {
-  border-top: 1px solid #d4d7d9; }
+  /* border-top: 1px solid #d4d7d9; */
+  }
 
 .listing .listing-icon {
   position: absolute;
@@ -1679,11 +1700,12 @@ a:hover .popup {
 .sidebar .listing li a {
   display: block;
   padding: 5px 15px;
-  border-bottom: 1px solid #f0f0f0;
+  /* border-bottom: 1px solid #f0f0f0; */
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-weight: 400; }
+  font-weight: 400;
+  }
 
 .sidebar .listing li:first-child a {
   border-color: #f0f0f0; }
@@ -1700,11 +1722,12 @@ a:hover .popup {
 .content .listing .directory > a,
 .content .listing > li {
   display: block;
-  padding: 12px 15px;
-  border-bottom: 1px solid #f0f0f0;
-  height: 70px;
+  padding: 17px 18px;
+  border-bottom: 0px solid hsl(0deg 0% 100% / 0%);
+  height: 71px;
   height: auto !important;
-  min-height: 70px; }
+  min-height: 68px;
+  }
 
 .content .listing .directory {
   border: none;
@@ -2320,7 +2343,8 @@ a:hover .popup {
 
 .round {
   -webkit-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 22px;
+  }
 
 .arrow-top:after,
 .arrow-right:after,
@@ -2368,7 +2392,8 @@ a:hover .popup {
   padding: 4px 0;
   /* Vertical padding around content */ }
 
-.CodeMirror pre {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   padding: 0 4px;
   /* Horizontal padding of content */ }
 
@@ -2455,7 +2480,7 @@ a:hover .popup {
   left: 0;
   right: 0;
   top: -50px;
-  bottom: -20px;
+  bottom: 0;
   overflow: hidden; }
 
 .CodeMirror-ruler {
@@ -2573,11 +2598,11 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror-scroll {
   overflow: scroll !important;
   /* Things will break if this is overridden */
-  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* 50px is the magic margin used to hide the element's real scrollbars */
   /* See overflow: hidden in .CodeMirror */
-  margin-bottom: -30px;
-  margin-right: -30px;
-  padding-bottom: 30px;
+  margin-bottom: -50px;
+  margin-right: -50px;
+  padding-bottom: 50px;
   height: 100%;
   outline: none;
   /* Prevent dragging from highlighting the element */
@@ -2585,7 +2610,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 .CodeMirror-sizer {
   position: relative;
-  border-right: 30px solid transparent; }
+  border-right: 50px solid transparent; }
 
 /* The fake, visible scrollbars. Used to force redraw during scrolling
    before actual scrolling happens, thus preventing shaking and
@@ -2627,7 +2652,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   height: 100%;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: -30px; }
+  margin-bottom: -50px; }
 
 .CodeMirror-gutter-wrapper {
   position: absolute;
@@ -2657,7 +2682,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   min-height: 1px;
   /* prevents collapsing before first draw */ }
 
-.CodeMirror pre {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   /* Reset some styles that the rest of the page might have set */
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2678,7 +2704,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   -webkit-font-variant-ligatures: contextual;
   font-variant-ligatures: contextual; }
 
-.CodeMirror-wrap pre {
+.CodeMirror-wrap pre.CodeMirror-line,
+.CodeMirror-wrap pre.CodeMirror-line-like {
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: normal; }
@@ -2939,7 +2966,7 @@ span.CodeMirror-selectedtext {
     max-width: 840px; } }
 
 /* Screen sizes < 1200px --------------------- */
-@media all and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .icon.branding {
     background-position: 0 -115px; }
   .loading {
@@ -2985,15 +3012,17 @@ span.CodeMirror-selectedtext {
   .dropdown-menu .dropdown a:hover {
     background: transparent; }
   .heading {
-    padding: 20px 15px; }
+    padding: 12px 24px;
+    }
   .content-search {
     margin: 8px 15px 15px; }
   .containment {
     width: 100%;
     margin: 0; }
   .limiter {
-    width: 70%;
-    margin: 0; }
+    width: 63%;
+    margin: 0;
+    }
   .fixed .containment {
     padding-right: 60px; }
   .open .fixed .containment,
@@ -3011,7 +3040,8 @@ span.CodeMirror-selectedtext {
   .fixed .col-last {
     padding-right: 60px; }
   .post .view {
-    padding: 15px; } }
+    padding: 11px;
+    } }
 
 /* Screen sizes < 800px --------------------- */
 @media all and (max-width: 800px) {
@@ -3050,10 +3080,11 @@ span.CodeMirror-selectedtext {
     width: 40%; } }
 
 /* Smartphone (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-device-width: 300px) and (min-device-width: 300px) {
   html, body {
     -webkit-text-size-adjust: none;
-    text-size-adjust: none; }
+    text-size-adjust: none;
+    }
   .details .mask,
   .edit .topbar-wrapper,
   .popup {
